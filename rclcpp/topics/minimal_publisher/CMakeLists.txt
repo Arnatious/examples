@@ -11,6 +11,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 find_package(ament_cmake REQUIRED)
+find_package(ament_nodl REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
@@ -30,4 +31,5 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+nodl_export_node_description_file(${PROJECT_NAME}.nodl.xml)
 ament_package()

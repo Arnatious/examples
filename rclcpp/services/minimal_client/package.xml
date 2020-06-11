@@ -10,6 +10,7 @@
   <author>Morgan Quigley</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_nodl</buildtool_depend>
 
   <build_depend>rclcpp</build_depend>
   <build_depend>example_interfaces</build_depend>
@@ -21,4 +22,3 @@
     <build_type>ament_cmake</build_type>
   </export>
 </package>
-

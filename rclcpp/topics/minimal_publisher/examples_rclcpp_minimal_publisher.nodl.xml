@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="https://raw.githubusercontent.com/ubuntu-robotics/nodl/master/nodl_python/nodl/schemas/v1.xsd" schematypens="http://www.w3.org/2001/XMLSchema" ?>
+<interface version="1">
+    <node name="minimal_publisher" executable="publisher_lambda">
+        <topic
+               name="topic"
+               type="std_msgs/msg/String"
+               publisher="true">
+            <qos
+                   depth="10" />
+        </topic>
+    </node>
+    <node name="minimal_publisher" executable="publisher_member_function">
+        <topic
+               name="topic"
+               type="std_msgs/msg/String"
+               publisher="true">
+            <qos
+                   depth="10" />
+        </topic>
+    </node>
+    <node name="minimal_publisher" executable="publisher_not_composable">
+        <topic
+               name="topic"
+               type="std_msgs/msg/String"
+               publisher="true">
+            <qos
+                   depth="10" />
+        </topic>
+    </node>
+</interface>

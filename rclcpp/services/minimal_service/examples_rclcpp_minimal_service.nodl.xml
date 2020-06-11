@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="https://raw.githubusercontent.com/ubuntu-robotics/nodl/master/nodl_python/nodl/schemas/v1.xsd" schematypens="http://www.w3.org/2001/XMLSchema" ?>
+<interface version="1">
+    <node name="minimal_service" executable="service_main">
+        <service name="add_two_ints" type="example_interfaces/srv/AddTwoInts" server="true"/>
+    </node>
+</interface>

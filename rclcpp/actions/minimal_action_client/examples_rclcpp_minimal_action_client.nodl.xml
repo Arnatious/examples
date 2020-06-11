@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/ubuntu-robotics/nodl/master/nodl_python/nodl/schemas/v1.xsd" schematypens="http://www.w3.org/2001/XMLSchema" ?>
+<interface version="1">
+    <node name="minimal_action_client" executable="action_client_member_functions">
+        <action name="fibonacci" type="example_interfaces/action/Fibonacci"></action>
+    </node>
+    <node name="minimal_action_client" executable="action_client_not_composable">
+        <action name="fibonacci" type="example_interfaces/action/Fibonacci"></action>
+    </node>
+    <node name="minimal_action_client" executable="action_client_not_composable_with_cancel">
+        <action name="fibonacci" type="example_interfaces/action/Fibonacci"></action>
+    </node>
+    <node name="minimal_action_client" executable="action_client_not_composable_with_feedback">
+        <action name="fibonacci" type="example_interfaces/action/Fibonacci"></action>
+    </node>
+</interface>
